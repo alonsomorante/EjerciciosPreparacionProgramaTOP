@@ -1,4 +1,4 @@
-function isAnagram(s, t) {
+/*function isAnagram(s, t) {
     const arrLetterS = [];
     const arrLetterT = [];
     
@@ -40,4 +40,8 @@ function isAnagram(s, t) {
     
 }
 
-console.log(isAnagram("vaca", "vasa"))
+console.log(isAnagram("vaca", "vasa"))*/
+
+const blanco = " " 
+const result = blanco * 3
+console.log(result)

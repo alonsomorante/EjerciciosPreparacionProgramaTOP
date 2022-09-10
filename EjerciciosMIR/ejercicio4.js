@@ -1,31 +1,20 @@
-function caracteresEnComun(str1, str2) {
-    const allWords = []
-    const result = []
-    for (let i in str1)
-        allWords.push(str1[i])
-    for (let j in str2) {
-        allWords.push(str2[j])
+function ajustarTexto(str, num) {
+    let N = str.length;
+    let arrStr = []
+    if (N >= num) {
+        return str.slice(0, num)
+    } else {
+        arrStr.push(str)
     }
 
-    const objectWords = {}
-    for (let w of allWords){
-        if (objectWords[w]) {
-            objectWords[w] += 1
-        } else {
-            objectWords[w] = 1
-        }
+    let result = num - N;
+    while (result !== 0) {
+        arrStr.push(" ")
+        result--
     }
     
-    for (let c in objectWords){
-        if (objectWords[c] >= 2){
-            result.push(c)
-        }
-    }
-    
-    return result
-
+    const resultadoFinal = arrStr.join("")
+    return resultadoFinal
 }
 
-console.log(caracteresEnComun("hola", "mundo"))
-
-
+console.log(ajustarTexto("Alonso", 8))
