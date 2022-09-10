@@ -5,9 +5,13 @@ function moveZeroes(nums) {
         const num = nums[i]
 
         if (num !== 0) {
-            console.log(nums[index] = num);
+            nums[index] = num;
             index += 1
         }
+    }
+
+    for (let i = index; i < nums.length; i++) {
+        nums[i] = 0
     }
 
     return nums
