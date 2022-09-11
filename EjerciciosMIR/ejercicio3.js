@@ -27,5 +27,8 @@ function caracteresEnComun(str1, str2) {
 
 }
 
-console.log(caracteresEnComun("una cosa loca", "afirmacion"))
+
+console.log(caracteresEnComun("Hola", "Mundo")); // ["o"]
+console.log(caracteresEnComun("German", "Gabriela")); // ["G", "e", "r", "a"]
+console.log(caracteresEnComun("Hola", "Bye")); // []
 
